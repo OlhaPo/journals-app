@@ -1,13 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import Menu from "./Menu";
+import JournalList from "./JournalList";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Menu />
+      <Routes>
+        <Route path="/" element={<JournalList />} />
+        {/* <Route path="journals" elememt={<JournalList />} /> */}
+        {/* <Route path="gallery/:journalId" element={<Gallery />} /> */}
+        {/* <Route path="view-record/:recordId" element={<ViewRecord />} /> */}
+        {/* <Route path="add-record" element={<EditRecord />} /> */}
+        {/* <Route path="edit-record/:recordId" element={<EditRecord />} /> */}
+        {/* <Route path="not-found" element={<PageNotFound />} /> */}
+        {/* <Route path="*" element={<PageNotFound />} /> */}
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
