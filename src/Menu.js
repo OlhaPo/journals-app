@@ -8,6 +8,7 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Fade from "@mui/material/Fade";
+import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
 
 export default function ButtonAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -53,7 +54,9 @@ export default function ButtonAppBar() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Name of the Journal
           </Typography>
-          <Button color="inherit">Settings</Button>
+          <Button color="inherit">
+            <SettingsSuggestIcon />
+          </Button>
         </Toolbar>
       </AppBar>
     </Box>
