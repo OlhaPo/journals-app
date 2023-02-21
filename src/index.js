@@ -4,14 +4,14 @@ import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
-import Menu from "./Menu";
+import PositionedMenu from "./PositionedMenu";
 import JournalList from "./JournalList";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Menu />
+      <PositionedMenu />
       <Routes>
         <Route path="/" element={<JournalList />} />
         {/* <Route path="journals" elememt={<JournalList />} /> */}
