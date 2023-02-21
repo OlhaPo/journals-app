@@ -1,1 +1,8 @@
-
+{
+  "short_name": "Journals App",
+  "name": "Create And Keep All Journals At One Place",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
