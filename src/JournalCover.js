@@ -3,34 +3,52 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions, Container } from "@mui/material";
+import { CardActionArea, Container, Box } from "@mui/material";
+import ModeEditIcon from "@mui/icons-material/ModeEdit";
+import yogaMat from "./images/yogaMat.jpg";
+import spiralNotebook from "./images/spiralNotebook.jpg";
 
 export default function JournalCover() {
   return (
     <Container className="JournalCover">
-      <Card sx={{ maxWidth: 345, mt: "30px" }} elevation={8}>
+      <Card
+        sx={{ maxWidth: 345, mt: "30px", position: "relative" }}
+        elevation={8}
+      >
+        <Box
+          src={spiralNotebook}
+          component="img"
+          alt=""
+          sx={{
+            position: "absolute",
+            top: 0,
+            height: "100%",
+            zIndex: 100,
+            left: "-15px",
+          }}
+        />
         <CardActionArea>
           <CardMedia
             component="img"
-            height="140"
-            image="/static/images/cards/contemplative-reptile.jpg"
-            alt="green iguana"
+            height="210"
+            src={yogaMat}
+            alt="yoga mat"
           />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Lizard
+          <CardContent sx={{ ml: "30px" }}>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              sx={{ mb: "20px" }}
+            >
+              Yoga Journey
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+            <Typography variant="body2" sx={{ mb: "20px" }}>
+              22.02.23 Yoga for lymphatic flow
             </Typography>
+            <ModeEditIcon color="action" />
           </CardContent>
         </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-        </CardActions>
       </Card>
     </Container>
   );

@@ -36,7 +36,7 @@ export default function PositionedMenu() {
                 color="secondary"
                 size="large"
               >
-                <MenuIcon />
+                <MenuIcon color="action" />
               </Button>
               <Menu
                 id="fade-menu"
@@ -54,7 +54,7 @@ export default function PositionedMenu() {
               </Menu>
             </div>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Name of the Journal
+              Yoga
             </Typography>
             <Button color="inherit">
               <SettingsSuggestIcon />
