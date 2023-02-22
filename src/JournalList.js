@@ -1,5 +1,11 @@
 import React from "react";
 
-export default function ButtonAppBar() {
-  return <div>Hello</div>;
+import JournalCover from "./JournalCover";
+
+export default function JournalList() {
+  return (
+    <div>
+      <JournalCover />
+    </div>
+  );
 }
