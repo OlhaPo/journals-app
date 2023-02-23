@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 
 import PositionedMenu from "./PositionedMenu";
 import JournalList from "./JournalList";
+import ViewJournal from "./ViewJournal";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,7 +16,7 @@ root.render(
       <Routes>
         <Route path="/" element={<JournalList />} />
         {/* <Route path="journals" elememt={<JournalList />} /> */}
-        {/* <Route path="view-journal/:journalId" element={<ViewJournal />} /> */}
+        <Route path="view-journal" element={<ViewJournal />} />
         {/* <Route path="view-record/:recordId" element={<ViewRecord />} /> */}
         {/* <Route path="add-record" element={<EditRecord />} /> */}
         {/* <Route path="edit-record/:recordId" element={<EditRecord />} /> */}
