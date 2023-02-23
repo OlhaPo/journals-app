@@ -15,7 +15,7 @@ root.render(
       <Routes>
         <Route path="/" element={<JournalList />} />
         {/* <Route path="journals" elememt={<JournalList />} /> */}
-        {/* <Route path="gallery/:journalId" element={<Gallery />} /> */}
+        {/* <Route path="view-journal/:journalId" element={<ViewJournal />} /> */}
         {/* <Route path="view-record/:recordId" element={<ViewRecord />} /> */}
         {/* <Route path="add-record" element={<EditRecord />} /> */}
         {/* <Route path="edit-record/:recordId" element={<EditRecord />} /> */}
