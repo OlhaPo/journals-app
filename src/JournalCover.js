@@ -3,14 +3,14 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, Container, Box } from "@mui/material";
+import { CardActionArea, Box } from "@mui/material";
 import ModeEditIcon from "@mui/icons-material/ModeEdit";
 import yogaMat from "./images/yogaMat.jpg";
 import spiralNotebook from "./images/spiralNotebook.jpg";
 
 export default function JournalCover() {
   return (
-    <Container className="JournalCover">
+    <Box className="JournalCover">
       <Card
         sx={{ maxWidth: 345, mt: "30px", position: "relative" }}
         elevation={8}
@@ -50,6 +50,6 @@ export default function JournalCover() {
           </CardContent>
         </CardActionArea>
       </Card>
-    </Container>
+    </Box>
   );
 }
